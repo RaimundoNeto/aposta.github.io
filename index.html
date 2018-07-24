@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gerador de Números</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Gerador Aleatório de Apostas</h1>
+
+		<hr>
+
+		<div class="form-group">
+			<label for="sel1">Tipo do Jogo</label>
+			<select class="form-control" id="sel1">
+				<option id="opcao">mega sena</option>
+				<option id="opcao">lotofacil</option>
+				<option id="opcao">quina</option>
+<!-- 				<option id="opcao">sorte</option>	 -->
+			</select>
+		</div>
+
+		<div class="form-group">
+			<label>Quantidade de Números Apostados Por Jogo:</label><input type="number" class="form-control" name="qtdNumeros" id="qtdNumeros">
+		</div>
+
+		<div class="form-group">
+			<label>Quantidade de Jogos a Serem Gerados:</label><input type="number" class="form-control" name="qtdJogos" id="qtdJogos">
+		</div>
+
+		<button class="btn btn-success btn-sm" onclick="gerarAposta()">Gerar Apostas</button><br>
+
+
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<td>Jogos Gerados</td>
+				</tr>
+			</thead>
+			<tbody id="tabela">
+				
+			</tbody>
+		</table>
+	</div>
+</body>
+ <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</html>
